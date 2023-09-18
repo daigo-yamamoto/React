@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CES26</title>
+</head>
+<body>
+    <h1>Atividade 4</h1>
+    
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <button type="submit">Enviar Arquivo</button>
+    </form>
+    
+    <form action="/data" method="get">
+        <button type="submit">Obter Dados via GET</button>
+    </form>
+    
+    <button id="ajaxButton">Obter Dados via AJAX</button>
+    
+    <p id="jsonData"></p>
+    
+    <script src="script.js"></script>
+</body>
+</html>
